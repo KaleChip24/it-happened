@@ -36,7 +36,7 @@ API will be added after Airtable build
 - Change rating stars to mice.
 - Comments page that allows for comments on current movies.
 - Add a second table with cat related book reviews.
-- Drop down Navbar.
+- Add a "Featured" link for best feline actor
 
 ## Project Schedule
 
