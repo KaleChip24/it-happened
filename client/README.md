@@ -12,8 +12,10 @@ Movies featuring cats, reviewed by (mostly my) cats.
 
 Check out Tel & Weezy's House of Film [here](https://whimsical.com/Hmdur76bT3thMqh24AsiCf)
 
+Tablet adaptation [here](https://whimsical.com/MawWPUQcdit6WtWJQCp8B3)
+
 ## Component Hierarchy
-Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+
 
 ## API and Data Sample
 
