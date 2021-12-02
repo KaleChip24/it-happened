@@ -10,14 +10,22 @@ Sit back, find the sun spot and get some laughs as my cats give their take on al
 
 ## Wireframes
 
-Check out Tel & Weezy's House of Film [here](https://whimsical.com/Hmdur76bT3thMqh24AsiCf)
+Check out Tel & Weezy's House of Film 
 
-Tablet adaptation [here](https://whimsical.com/MawWPUQcdit6WtWJQCp8B3)
+![wireframe](https://res.cloudinary.com/dv2buktns/image/upload/v1638461803/Screen_Shot_2021-12-02_at_11.15.51_c0rsph.png)
+![wireframe](https://res.cloudinary.com/dv2buktns/image/upload/v1638461815/Screen_Shot_2021-12-02_at_11.16.04_zylg7w.png)
+![wireframe](https://res.cloudinary.com/dv2buktns/image/upload/v1638461822/Screen_Shot_2021-12-02_at_11.16.10_orbwsr.png)
+
+
+Tablet adaptation 
+
+![wireframe](https://res.cloudinary.com/dv2buktns/image/upload/v1638461888/Screen_Shot_2021-12-02_at_11.17.25_i4zzbo.png)
+![wireframe](https://res.cloudinary.com/dv2buktns/image/upload/v1638461892/Screen_Shot_2021-12-02_at_11.17.33_y9ff3h.png)
+![wireframe](https://res.cloudinary.com/dv2buktns/image/upload/v1638461897/Screen_Shot_2021-12-02_at_11.17.57_vmhcul.png)
 
 ## Component Hierarchy
 
-Let the [Hierarchy](https://whimsical.com/movie-meow-tin-hierarchy-NkCFAnm5oM68MQy6gnRhFc) begin!
-
+![Hierarchy](https://res.cloudinary.com/dv2buktns/image/upload/v1638462267/Screen_Shot_2021-12-02_at_11.24.06_y83jg5.png)
 ## API and Data Sample
 
 ```json
@@ -26,9 +34,11 @@ API will be added after Airtable build
 
 #### MVP 
 
-- Render Airtable data to the home page.
-- Clickable homepage icons that will take you to meow-vie reviews.
-- Post new reviews/moew-vies to form page.
+- Be a working, interactive React app, built using create react app.
+- Utilize React Router, installed via NPM.
+- Have at least 6 separate, functinal components
+- Use Axios to consume data from Airtable, and GET/render that data in your components.
+- Use Axios to POST/create new data on Airtable.
 
 #### PostMVP  
 
