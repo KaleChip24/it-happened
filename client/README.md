@@ -6,7 +6,7 @@ Movie Meow-tian
 
 ## Project Description
 
-Movies featuring cats, reviewed by (mostly my) cats.
+Sit back, find the sun spot and get some laughs as my cats give their take on all our favorit films featuring cats(no role is too small)! Movie Meow-tian is a React build that uses an Airtable to render data and allows users to add their own. The homepage movie icons will take the users to the meow-vie review and synopsis. There is a form page where your cat can leave their own review! 
 
 ## Wireframes
 
@@ -33,9 +33,10 @@ API will be added after Airtable build
 #### PostMVP  
 
 - Change curse to cat paw.
+- Change rating stars to mice.
 - Comments page that allows for comments on current movies.
 - Add a second table with cat related book reviews.
-- Drop down Navbar
+- Drop down Navbar.
 
 ## Project Schedule
 
