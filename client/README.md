@@ -16,13 +16,12 @@ Tablet adaptation [here](https://whimsical.com/MawWPUQcdit6WtWJQCp8B3)
 
 ## Component Hierarchy
 
+Let the [Hierarchy](https://whimsical.com/movie-meow-tin-hierarchy-NkCFAnm5oM68MQy6gnRhFc) begin!
 
 ## API and Data Sample
 
-Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This __must__ be properly formatted. An example is below:
-
 ```json
-My API code here! 
+API will be added after Airtable build 
 ``` 
 
 #### MVP 
@@ -71,9 +70,18 @@ My API code here!
 ## SWOT Analysis
 
 ### Strengths:
+- Eye for detail! 
+- Building of the app bones
 
 ### Weaknesses:
+- JS loops! 
+- Getting my info to render to the page consistantly
 
 ### Opportunities:
+- Excited to make this fun and get a laugh
+- Will add more as the project goes on.
 
 ### Threats:
+- Using more than one Airtable
+- Spiders...
+- Will add more (serious ones, not just spiders)
