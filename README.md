@@ -32,11 +32,11 @@ API will be added after Airtable build
 
 #### PostMVP  
 
-- Change curse to cat paw.
-- Change rating stars to mice.
+- Change curser to cat paw.
+- Change rating stars to mice or furrballs?
 - Comments page that allows for comments on current movies.
 - Add a second table with cat related book reviews.
-- Add a "Featured" link for best feline actor
+- Add a "Featured" link for best feline character.
 
 ## Project Schedule
 
@@ -63,10 +63,10 @@ API will be added after Airtable build
 | Form Creation | H | 3hrs| 0hrs | 0hrs |
 | Navigation to Form | H | 3hrs| 0hrs | 0hrs |
 | Post to Home | H | 3hrs| 0hrs | 0hrs |
-| Styling | H | 4hrs| 0hrs | 0hrs |
-| Final DeBugging | H | 2hrs| 0hrs | 0hrs |
+| Styling | H | 3hrs| 0hrs | 0hrs |
+| Final DeBugging | H | 3hrs| 0hrs | 0hrs |
 | Post MVP| H | 4hrs| 0hrs | 0hrs |
-| Total | H | 3hrs| 0hrs | 0hrs |
+| Total | H | 30hrs| 3hrs | 0hrs |
 
 ## SWOT Analysis
 
