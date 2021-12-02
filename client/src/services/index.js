@@ -11,3 +11,8 @@ export const grabFilms = async () => {
   const res = await axios.get(BASE_URL, config)
   return res.data.records
 }
+
+export const postFillms = async (body) => {
+  const res = await axios.post(BASE_URL, { fileds: body }, config)
+  return res.data.records
+}
