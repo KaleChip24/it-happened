@@ -29,7 +29,17 @@ Tablet adaptation
 ## API and Data Sample
 
 ```json
-API will be added after Airtable build 
+{
+    "records": [
+        {
+            "id": "reca8KGW6hvVB79sF",
+            "fields": {
+                "title": "Batman Returns",
+                "image": "https://m.media-amazon.com/images/M/MV5BOGZmYzVkMmItM2NiOS00MDI3LWI4ZWQtMTg0YWZkODRkMmViXkEyXkFqcGdeQXVyODY0NzcxNw@@._V1_.jpg",
+                "synopsis": "This Batman sequel may be the best representation of Catwoman on the big screen (fight us on that, if you must!). Selina Kyle is the ultimate butt-kic...",
+                "tel-review": "quip here",
+                "weez-review": "quip here"
+            } 
 ``` 
 
 #### MVP 
