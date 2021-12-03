@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     const getAllFilms = async () => {
       const res = await grabFilms()
-      console.log(res)
+      // console.log(res)
       setFilms(res)
     }
     getAllFilms()

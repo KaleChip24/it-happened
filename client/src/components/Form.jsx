@@ -28,41 +28,56 @@ function Form(props) {
 
       }
     }
-  }, [params.id, props.film])
+  }, [params.id, props.films])
 
 
-  const handleSubmit = async(e)
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    const newFilm = {
+      title,
+      image,
+      synopsis,
+      review,
+      rating
+    }
+    if (props.films) {
+      const res = await postFilms(newFilm)
+      console.log(res)
+    }
+    // if (res)
+    //   nav('/')
+  }
 
   return (
     <>
       <section>
         <h3>Does your cat have a Purrfect review? Add below!</h3>
       </section>
-      <form>
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
           value={title}
           name="title"
           placeholder="Title"
-          oncChange={(e) => setTitle(e.target.value)} />
+          onChange={(e) => setTitle(e.target.value)} />
         <input
           type="text"
           value={image}
           name="image"
           placeholder="Meow-vie Poster URL"
-          oncChange={(e) => setImage(e.target.value)} />
+          onChange={(e) => setImage(e.target.value)} />
         <input
           type="text"
           value={synopsis}
           name="synopsis"
           placeholder="Synopsis"
-          oncChange={(e) => setSynopsis(e.target.value)} />
+          onChange={(e) => setSynopsis(e.target.value)} />
         <input
           type="text"
           value={review}
           name="review"
           placeholder="Review"
-          oncChange={(e) => setReview(e.target.value)} />
+          onChange={(e) => setReview(e.target.value)} />
         <br />
         <label>
           Rating: out of 5 Stars
@@ -71,7 +86,7 @@ function Form(props) {
             value={rating}
             name="rating"
             placeholder="Stars out of 5"
-            oncChange={(e) => setRating(e.target.value)} />
+            onChange={(e) => setRating(e.target.valueAsNumber)} />
         </label>
         <button>Paw Me!</button>
       </form>
