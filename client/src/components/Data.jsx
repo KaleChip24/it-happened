@@ -27,6 +27,7 @@ function Data(props) {
           <h2>{synopsis}</h2>
           <h2>{review}</h2>
           <h2>{rating}</h2>
+          <Link to={`/edit/${film.id}`}>Edit Meow-vie Review</Link>
         </>
       }
 

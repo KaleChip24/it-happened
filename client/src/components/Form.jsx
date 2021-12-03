@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import { useParams, useNavigate } from 'react-router-dom'
-import { postFilms } from '../services/index'
+import { editFilms, postFilms } from '../services/index'
 
 function Form(props) {
   const [title, setTitle] = useState('')
@@ -18,13 +18,12 @@ function Form(props) {
       const filmData = props.films.find(film => {
         return film.id === params.id
       })
-      // console.log(filmData)
       if (filmData) {
-        setTitle(filmData.fileds.title)
-        setImage(filmData.fileds.image)
-        setSynopsis(filmData.fileds.synopsis)
-        setReview(filmData.fileds.review)
-        setRating(filmData.fileds.rating)
+        setTitle(filmData.fields.title)
+        setImage(filmData.fields.image)
+        setSynopsis(filmData.fields.synopsis)
+        setReview(filmData.fields.review)
+        setRating(filmData.fields.rating)
 
       }
     }
@@ -38,14 +37,22 @@ function Form(props) {
       image,
       synopsis,
       review,
-      rating
+      rating,
     }
     if (props.films) {
+      const res = await editFilms(newFilm, params.id)
+      // const res = await postFilms(newFilm)
+      props.setToggle(e => !e)
+      if (res) {
+        nav(`/films/${params.id}`)
+      }
+    } else {
       const res = await postFilms(newFilm)
-      console.log(res)
+      props.setToggle(e => !e)
+      if (res) {
+        nav(`/`)
+      }
     }
-    // if (res)
-    //   nav('/')
   }
 
   return (

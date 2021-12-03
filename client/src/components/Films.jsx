@@ -5,13 +5,12 @@ function Films(props) {
     <div>
       {
         props.films.map(film => (
-          <span>
+          <div key={film.id}>
             <Link
               to={`/films/${film.id}`}
-              key={film.id}
             >{<img style={{ width: 200, height: 300 }} src={film.fields.image} alt="MoviePoster" />}</Link>
-            <h2 className="film-title" key={film.title}>{film.fields.title}</h2>
-          </span>
+            <h2 className="film-title">{film.fields.title}</h2>
+          </div>
         ))
       }
     </div >

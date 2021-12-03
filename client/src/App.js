@@ -15,21 +15,31 @@ function App() {
   useEffect(() => {
     const getAllFilms = async () => {
       const res = await grabFilms()
-      // console.log(res)
+      console.log(res)
       setFilms(res)
     }
     getAllFilms()
-  }, [])
+  }, [toggle])
 
 
   return (
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Films films={films} />} />
-        <Route path="/new" element={<Form films={films} />} />
-        <Route path="/films/:id" element={<Data films={films} />} />
-        <Route path="/edit/:id" element={<Form films={films} />} />
+        <Route path="/"
+          element={<Films films={films} />} />
+        <Route path="/new"
+          element={<Form films={films}
+            setToggle={setToggle} />}
+        />
+        <Route path="/films/:id"
+          element={<Data films={films}
+            setToggle={setToggle} />}
+        />
+        <Route path="/edit/:id"
+          element={<Form films={films}
+            setToggle={setToggle} />}
+        />
       </Routes>
 
     </div>

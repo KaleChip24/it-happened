@@ -13,6 +13,11 @@ export const grabFilms = async () => {
 }
 
 export const postFilms = async (body) => {
-  const res = await axios.post(BASE_URL, { fileds: body }, config)
-  return res.data.records
+  const res = await axios.post(BASE_URL, { fields: body }, config)
+  return res.data
+}
+
+export const editFilms = async (body, id) => {
+  const res = await axios.put(`${BASE_URL}/${id}`, { fields: body }, config)
+  return res.data
 }
