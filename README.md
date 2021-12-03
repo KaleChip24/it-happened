@@ -77,8 +77,8 @@ Tablet adaptation
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Propposal Writting | H | 3hrs| 3hrs | 3hrs |
-| Building Airtable | H | 2hrs| 0hrs | 0hrs |
-| Render Data to Home | H | 3hrs| 0hrs | 0hrs |
+| Building Airtable | H | 2hrs| 2hrs | 2hrs |
+| Render Data to Home | H | 3hrs| 2.5hrs | 2.5hrs |
 | Navigation To Review page | H | 3hrs| 0hrs | 0hrs |
 | Form Creation | H | 3hrs| 0hrs | 0hrs |
 | Navigation to Form | H | 3hrs| 0hrs | 0hrs |
@@ -86,7 +86,7 @@ Tablet adaptation
 | Styling | H | 3hrs| 0hrs | 0hrs |
 | Final DeBugging | H | 3hrs| 0hrs | 0hrs |
 | Post MVP| H | 4hrs| 0hrs | 0hrs |
-| Total | H | 30hrs| 3hrs | 0hrs |
+| Total | H | 30hrs| 7.5hrs | 0hrs |
 
 ## SWOT Analysis
 
