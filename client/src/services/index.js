@@ -1,5 +1,7 @@
 import axios from "axios"
 
+
+export const FEAT_URL = `https://api.airtable.com/v0/${process.env.REACT_APP_API_BASE}/features`
 export const BASE_URL = `https://api.airtable.com/v0/${process.env.REACT_APP_API_BASE}/films`
 export const config = {
   headers: {
@@ -24,4 +26,11 @@ export const editFilms = async (body, id) => {
 export const deleteFilms = async (id) => {
   const res = await axios.delete(`${BASE_URL}/${id}`, config)
   return res.data
+}
+
+//features
+
+export const grabFeatures = async () => {
+  const res = await axios.get(BASE_URL, config)
+  return res.data.records
 }
