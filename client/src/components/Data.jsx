@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
+import { deleteFilms } from '../services/index'
 
 function Data(props) {
   const [film, setFilm] = useState(null)
   const params = useParams()
+  const nav = useNavigate()
 
   useEffect(() => {
     const filmData = props.films.find(film => {
@@ -14,13 +16,21 @@ function Data(props) {
     }
   }, [params.id, props.films])
 
+  const handleDelete = async () => {
+    const res = await deleteFilms(params.id)
+    props.setToggle(e => !e)
+    if (res) {
+      nav(`/`)
+    }
+  }
+
   if (!film) return <h1> Loading... </h1>
 
   const { title, synopsis, review, rating, image } = film.fields
 
   return (
     <div>
-      {
+      {film && film.fields &&
         <>
           <img style={{ width: 200, height: 300 }} src={image} alt="MoviePoster" />
           <h2>{title}</h2>
@@ -28,6 +38,7 @@ function Data(props) {
           <h2>{review}</h2>
           <h2>{rating}</h2>
           <Link to={`/edit/${film.id}`}>Edit Meow-vie Review</Link>
+          <button onClick={handleDelete}>Scratch. It. Out!</button>
         </>
       }
 

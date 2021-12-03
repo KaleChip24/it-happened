@@ -39,9 +39,9 @@ function Form(props) {
       review,
       rating,
     }
+
     if (props.films) {
       const res = await editFilms(newFilm, params.id)
-      // const res = await postFilms(newFilm)
       props.setToggle(e => !e)
       if (res) {
         nav(`/films/${params.id}`)
@@ -50,8 +50,9 @@ function Form(props) {
       const res = await postFilms(newFilm)
       props.setToggle(e => !e)
       if (res) {
-        nav(`/`)
+        nav('/')
       }
+
     }
   }
 

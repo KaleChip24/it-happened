@@ -29,7 +29,7 @@ function App() {
         <Route path="/"
           element={<Films films={films} />} />
         <Route path="/new"
-          element={<Form films={films}
+          element={<Form
             setToggle={setToggle} />}
         />
         <Route path="/films/:id"
