@@ -1,7 +1,7 @@
 import './App.css';
 // import axios from 'axios';
 import { useEffect, useState } from 'react'
-import { grabFilms } from './services';
+import { grabFilms, grabFeatures } from './services/index';
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Data from './components/Data';
@@ -10,6 +10,7 @@ import Form from './components/Form';
 
 function App() {
   const [films, setFilms] = useState([])
+  const [features, setFeatures] = useState([])
   const [toggle, setToggle] = useState(false)
 
   useEffect(() => {
@@ -20,6 +21,15 @@ function App() {
     }
     getAllFilms()
   }, [toggle])
+
+  useEffect(() => {
+    const grabFeatures = async () => {
+      const res = await grabFeatures()
+      console.log(res)
+      setFeatures(res)
+    }
+    grabFeatures()
+  }, [])
 
 
   return (

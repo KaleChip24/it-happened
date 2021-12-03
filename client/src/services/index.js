@@ -31,6 +31,6 @@ export const deleteFilms = async (id) => {
 //features
 
 export const grabFeatures = async () => {
-  const res = await axios.get(BASE_URL, config)
+  const res = await axios.get(FEAT_URL, config)
   return res.data.records
 }
