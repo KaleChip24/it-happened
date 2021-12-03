@@ -5,6 +5,7 @@ const Navbar = () => {
     <div>
       <Link to="/">Home</Link>
       <Link to="/new">Add Purrfect Review</Link>
+      <Link to="/featured">Featured Feline</Link>
     </div>
   );
 };

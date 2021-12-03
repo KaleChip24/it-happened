@@ -40,6 +40,7 @@ function App() {
           element={<Form films={films}
             setToggle={setToggle} />}
         />
+        <Route path="/featured" element={null} />
       </Routes>
 
     </div>
