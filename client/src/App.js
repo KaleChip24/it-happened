@@ -23,12 +23,12 @@ function App() {
   }, [toggle])
 
   useEffect(() => {
-    const grabFeatures = async () => {
+    const getAllFeatures = async () => {
       const res = await grabFeatures()
       console.log(res)
       setFeatures(res)
     }
-    grabFeatures()
+    getAllFeatures()
   }, [])
 
 
