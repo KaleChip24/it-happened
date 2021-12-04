@@ -7,6 +7,8 @@ import Navbar from './components/Navbar';
 import Data from './components/Data';
 import Films from './components/Films';
 import Form from './components/Form';
+import Featured from './components/features/Featured';
+import CatData from './components/features/CatData';
 
 function App() {
   const [films, setFilms] = useState([])
@@ -50,7 +52,8 @@ function App() {
           element={<Form films={films}
             setToggle={setToggle} />}
         />
-        <Route path="/featured" element={null} />
+        <Route path="/featured" element={<Featured features={features} />} />
+        <Route path="/featured/:id" element={<CatData features={features} />} />
       </Routes>
 
     </div>
