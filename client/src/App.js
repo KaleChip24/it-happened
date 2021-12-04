@@ -1,5 +1,5 @@
 import './App.css';
-// import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useState } from 'react'
 import { grabFilms, grabFeatures } from './services/index';
 import { Routes, Route } from 'react-router-dom'
@@ -9,7 +9,7 @@ import Films from './components/Films';
 import Form from './components/Form';
 import Featured from './components/features/Featured';
 import CatData from './components/features/CatData';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   const [films, setFilms] = useState([])
