@@ -9,6 +9,7 @@ import Films from './components/Films';
 import Form from './components/Form';
 import Featured from './components/features/Featured';
 import CatData from './components/features/CatData';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [films, setFilms] = useState([])
