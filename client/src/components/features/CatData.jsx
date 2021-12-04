@@ -18,7 +18,7 @@ function CatData(props) {
   }, [params.id, props.features])
 
   if (!cats) return <h1> Loading ... </h1>
-  const { name, image, description } = cats.fields
+  const { name, movie, image, description } = cats.fields
   return (
     <div>
       {
@@ -26,6 +26,7 @@ function CatData(props) {
         <>
           <img style={{ width: 400, height: 300 }} src={image} alt="Featured Cat" />
           <h2>{name}</h2>
+          <h3>{movie}</h3>
           <p>{description}</p>
         </>
       }
