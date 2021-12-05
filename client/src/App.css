@@ -1,9 +1,14 @@
+body {
+  margin: 0;
+  max-height: 100vh;
+}
+
 .App {
   text-align: center;
-  margin: 0;
+  /* margin: 0; */
   min-height: 100vh;
-  background-image: url("./images/retro-background.jpg");
-  background-size: contain;
+  background-image: url(https://wallpaperaccess.com/full/1216840.png);
+  background-size: cover;
   background-repeat: no-repeat;
   
 }
@@ -13,15 +18,19 @@
   margin: 30px auto;
   padding-top: 15px;
   border-radius: 10px;
-  background-color: rgba(249, 249, 248, 0.719);
+  background-color: #f6c882bd;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;}
+
+.movie-posters {
+  grid-template-columns: 1fr;
+}
 
 .film-title {
 padding-bottom: 15px;
 }
 
 .navbar {
-  background-color: whitesmoke;
+  background-color: #e3ddbf00;
   height:70px;
-  box-shadow: #81b29ad7 0px 5px, #81b29abf 0px 10px, #81b29a76 0px 15px, #81b29a68 0px 20px, #81b29a4f 0px 25px;
+  box-shadow: #f6c882f0 0px 5px, #f6c882c1 0px 10px, #f6c882a7 0px 15px, #f6c88274 0px 20px, #f6c8825d 0px 25px;
 }
