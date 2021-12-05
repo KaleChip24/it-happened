@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams, Link, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 
 import React from 'react';
 
@@ -20,7 +20,7 @@ function CatData(props) {
   if (!cats) return <h1> Loading ... </h1>
   const { name, movie, image, description } = cats.fields
   return (
-    <div>
+    <div className="cat-data">
       {
         cats && cats.fields &&
         <>

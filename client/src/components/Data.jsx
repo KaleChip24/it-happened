@@ -29,7 +29,7 @@ function Data(props) {
   const { title, synopsis, review, rating, image } = film.fields
 
   return (
-    <div>
+    <div className="film-details">
       {film && film.fields &&
         <>
           <img style={{ width: 200, height: 300 }} src={image} alt="MoviePoster" />
