@@ -37,6 +37,11 @@ export const grabFeatures = async () => {
 }
 
 //comments
+export const grabComments = async () => {
+  const res = await axios.get(COMMENT_URL, config)
+  return res.data.records
+}
+
 export const postComment = async (body) => {
   const res = await axios.post(COMMENT_URL, { fields: body }, config)
   return res.data

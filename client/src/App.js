@@ -1,7 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useState } from 'react'
-import { grabFilms, grabFeatures } from './services/index';
+import { grabFilms, grabFeatures, grabComments } from './services/index';
 import { Routes, Route } from 'react-router-dom'
 import Nav from './components/Navbar';
 import Data from './components/Data';
@@ -14,6 +14,7 @@ import CatData from './components/features/CatData';
 function App() {
   const [films, setFilms] = useState([])
   const [features, setFeatures] = useState([])
+  const [comments, setComments] = useState([])
   const [toggle, setToggle] = useState(false)
 
   useEffect(() => {
@@ -32,6 +33,15 @@ function App() {
       setFeatures(res)
     }
     getAllFeatures()
+  }, [])
+
+  useEffect(() => {
+    const getAllComments = async () => {
+      const res = await grabComments()
+      console.log(res)
+      setComments(res)
+    }
+    getAllComments()
   }, [])
 
 
@@ -53,8 +63,10 @@ function App() {
           element={<Form films={films}
             setToggle={setToggle} />}
         />
-        <Route path="/featured" element={<Featured features={features} />} />
-        <Route path="/featured/:id" element={<CatData features={features} />} />
+        <Route path="/featured"
+          element={<Featured features={features} comments={comments} />} />
+        <Route path="/featured/:id"
+          element={<CatData features={features} />} />
       </Routes>
 
     </div>
