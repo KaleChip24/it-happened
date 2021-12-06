@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
-import { useParams, useNavigate, Link } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 
 import React from 'react';
 
 function CatData(props) {
   const [cats, setCats] = useState(null)
   const params = useParams()
-  const nav = useNavigate
 
   useEffect(() => {
     const catData = props.features.find(feature => {

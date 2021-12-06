@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useState } from 'react'
 import { grabFilms, grabFeatures } from './services/index';
 import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar';
+import Nav from './components/Navbar';
 import Data from './components/Data';
 import Films from './components/Films';
 import Form from './components/Form';
@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
+      <Nav />
       <Routes>
         <Route path="/"
           element={<Films films={films} />} />

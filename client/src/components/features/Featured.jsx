@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { useEffet, useState } from 'react'
+// import { useEffet, useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import FeatForm from './FeatForm';
 
@@ -27,7 +27,7 @@ function Featured(props, id) {
           <img style={{ width: 400, height: 300 }} src={props.features.image} alt="Cat" />
         </div>
       }
-      <h4>Who do you think should be top Kitty?</h4>
+      <h4>Who do you think should be our Featured Feline?</h4>
       <FeatForm />
     </div>
   );
