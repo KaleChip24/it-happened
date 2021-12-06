@@ -41,12 +41,12 @@ function Form(props) {
     }
 
     if (props.films) {
-      const res = await editFilms(newFilm, params.id)
-      props.setToggle(e => !e)
-      if (res) {
-        nav(`/films/${params.id}`)
-      }
-    } else {
+      //   const res = await editFilms(newFilm, params.id)
+      //   props.setToggle(e => !e)
+      //   if (res) {
+      //     nav(`/films/${params.id}`)
+      //   }
+      // } else {
       const res = await postFilms(newFilm)
       props.setToggle(e => !e)
       if (res) {

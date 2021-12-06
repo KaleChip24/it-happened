@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate, Link } from 'react-router-dom'
 
 import React from 'react';
 
@@ -28,6 +28,7 @@ function CatData(props) {
           <h2>{name}</h2>
           <h3>{movie}</h3>
           <p>{description}</p>
+          <Link to="/featured">Back</Link>
         </>
       }
 

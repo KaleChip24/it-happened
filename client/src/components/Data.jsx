@@ -16,13 +16,13 @@ function Data(props) {
     }
   }, [params.id, props.films])
 
-  const handleDelete = async () => {
-    const res = await deleteFilms(params.id)
-    props.setToggle(e => !e)
-    if (res) {
-      nav(`/`)
-    }
-  }
+  // const handleDelete = async () => {
+  //   const res = await deleteFilms(params.id)
+  //   props.setToggle(e => !e)
+  //   if (res) {
+  //     nav(`/`)
+  //   }
+  // }
 
   if (!film) return <h1> Loading... </h1>
 
@@ -37,8 +37,8 @@ function Data(props) {
           <h2>{synopsis}</h2>
           <h2>{review}</h2>
           <h2>{rating}</h2>
-          <Link to={`/edit/${film.id}`}>Edit Meow-vie Review</Link>
-          <button onClick={handleDelete}>Scratch. It. Out!</button>
+          {/* <Link to={`/edit/${film.id}`}>Edit Meow-vie Review</Link>
+          <button onClick={handleDelete}>Scratch. It. Out!</button> */}
         </>
       }
 
