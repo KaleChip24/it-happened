@@ -13,20 +13,21 @@ body {
   
 }
 
-.movie-posters {
+/* .movie-posters {
   width: 300px;
   margin: 30px auto;
   padding-top: 15px;
   border-radius: 10px;
   background-color: #f6c882bd;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;}
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+} */
 
-.movie-posters {
+/* .movie-posters {
   grid-template-areas: 
   "H H"
   "M S"
   "F F";
-}
+} */
 
 .film-title {
 padding-bottom: 15px;
@@ -41,4 +42,9 @@ padding-bottom: 15px;
 
 .carousel-wrap {
   margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+.feat-h4{
+  margin-top: 20px;
 }

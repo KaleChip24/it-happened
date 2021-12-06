@@ -1,6 +1,7 @@
 import axios from "axios"
 
 
+export const COMMENT_URL = `https://api.airtable.com/v0/${process.env.REACT_APP_API_BASE}/comments`
 export const FEAT_URL = `https://api.airtable.com/v0/${process.env.REACT_APP_API_BASE}/features`
 export const BASE_URL = `https://api.airtable.com/v0/${process.env.REACT_APP_API_BASE}/films`
 export const config = {
@@ -33,4 +34,10 @@ export const deleteFilms = async (id) => {
 export const grabFeatures = async () => {
   const res = await axios.get(FEAT_URL, config)
   return res.data.records
+}
+
+//comments
+export const postComment = async (body) => {
+  const res = await axios.post(COMMENT_URL, { fields: body }, config)
+  return res.data
 }
