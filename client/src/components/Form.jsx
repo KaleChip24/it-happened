@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 // import { Link } from 'react-router-dom'
 import { useParams, useNavigate } from 'react-router-dom'
-import { editFilms, postFilms } from '../services/index'
+import { postFilms } from '../services/index'
 
 function Form(props) {
   const [title, setTitle] = useState('')

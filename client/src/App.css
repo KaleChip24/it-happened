@@ -22,7 +22,10 @@ body {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;}
 
 .movie-posters {
-  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "H H"
+  "M S"
+  "F F";
 }
 
 .film-title {
@@ -31,6 +34,11 @@ padding-bottom: 15px;
 
 .navbar {
   background-color: #e3ddbf00;
+  border-radius: 15px;
   height:70px;
   box-shadow: #f6c882f0 0px 5px, #f6c882c1 0px 10px, #f6c882a7 0px 15px, #f6c88274 0px 20px, #f6c8825d 0px 25px;
+}
+
+.carousel-wrap {
+  margin-top: 60px;
 }

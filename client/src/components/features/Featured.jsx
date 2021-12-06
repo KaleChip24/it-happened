@@ -27,7 +27,7 @@ function Featured(props, id) {
           <img style={{ width: 400, height: 300 }} src={props.features.image} alt="Cat" />
         </div>
       }
-      <h4>Who do you think should be our Featured Feline?</h4>
+      <h4 className="feat-h4" >Who do you think should be our Featured Feline?</h4>
       <FeatForm />
     </div>
   );
