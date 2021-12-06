@@ -23,7 +23,7 @@ function Featured(props, id) {
         </Carousel>
         :
         <div className="features-image">
-          <img style={{ width: 400, height: 300 }} src={props.features.fields.image} alt="Cat" />
+          <img style={{ width: 400, height: 300 }} src={props.features.image} alt="Cat" />
         </div>
       }
     </div>
