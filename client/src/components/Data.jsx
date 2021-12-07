@@ -38,7 +38,7 @@ function Data(props) {
           <h2>{synopsis}</h2>
           <h2>{review}</h2>
           {/* <h2>{rating}</h2> */}
-          <StarRatings rating={rating} starRatedColor="yellow" numberOfStars={5} name="rating" size={5} />
+          <StarRatings rating={rating} starRatedColor="yellow" numberOfStars={5} name="rating" />
           {/* <Link to={`/edit/${film.id}`}>Edit Meow-vie Review</Link>
           <button onClick={handleDelete}>Scratch. It. Out!</button> */}
         </>
