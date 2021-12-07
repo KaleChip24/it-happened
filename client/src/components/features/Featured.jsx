@@ -30,9 +30,9 @@ function Featured(props, id) {
           </div>
         }
       </div>
-      <h4 className="feat-h4" >Who do you think should be our Featured Feline?</h4>
+      <h4 className="feat-h4" >Who do you think should be our next Featured Feline?</h4>
       <FeatForm />
-      {/* <Comment /> */}
+      <Comment comment={props.comment} />
     </>
   );
 }

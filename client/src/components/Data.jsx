@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { deleteFilms } from '../services/index'
+import StarRatings from 'react-star-ratings'
 
 function Data(props) {
   const [film, setFilm] = useState(null)
@@ -36,7 +37,8 @@ function Data(props) {
           <h2>{title}</h2>
           <h2>{synopsis}</h2>
           <h2>{review}</h2>
-          <h2>{rating}</h2>
+          {/* <h2>{rating}</h2> */}
+          <StarRatings rating={rating} starRatedColor="yellow" numberOfStars={5} name="rating" size={5} />
           {/* <Link to={`/edit/${film.id}`}>Edit Meow-vie Review</Link>
           <button onClick={handleDelete}>Scratch. It. Out!</button> */}
         </>

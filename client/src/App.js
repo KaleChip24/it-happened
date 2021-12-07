@@ -14,7 +14,7 @@ import CatData from './components/features/CatData';
 function App() {
   const [films, setFilms] = useState([])
   const [features, setFeatures] = useState([])
-  const [comments, setComments] = useState([])
+  const [comment, setComment] = useState([])
   const [toggle, setToggle] = useState(false)
 
   useEffect(() => {
@@ -39,7 +39,7 @@ function App() {
     const getAllComments = async () => {
       const res = await grabComments()
       console.log(res)
-      setComments(res)
+      setComment(res)
     }
     getAllComments()
   }, [])
@@ -64,9 +64,11 @@ function App() {
             setToggle={setToggle} />}
         />
         <Route path="/featured"
-          element={<Featured features={features} comments={comments} />} />
+          element={<Featured features={features} comment={comment} />}
+        />
         <Route path="/featured/:id"
-          element={<CatData features={features} />} />
+          element={<CatData features={features} />}
+        />
       </Routes>
 
     </div>

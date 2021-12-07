@@ -10,17 +10,18 @@ body {
   background-image: url(https://wallpaperaccess.com/full/1216840.png);
   background-size: cover;
   background-repeat: no-repeat;
+  /* cursor: url(./images/cat-paw3.png), auto; */
   
 }
 
-/* .movie-posters {
+.movie-posters {
   width: 300px;
   margin: 30px auto;
   padding-top: 15px;
   border-radius: 10px;
-  background-color: #f6c882bd;
+  background-color: #f8f8f71e;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-} */
+}
 
 /* .movie-posters {
   grid-template-areas: 

@@ -1,10 +1,10 @@
-import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom'
+import { useState } from 'react';
+// import { useNavigate } from 'react-router-dom'
 import { postComment } from '../../services';
 
 function FeatForm(props) {
   const [name, setName] = useState('')
-  const [comment, setComment] = useState('')
+  const [comments, setComments] = useState('')
 
   // useEffect(() => {
 
@@ -14,7 +14,7 @@ function FeatForm(props) {
     e.preventDefault()
     const newComment = {
       name,
-      comment,
+      comments,
     }
 
     await postComment(newComment)
@@ -23,7 +23,7 @@ function FeatForm(props) {
   return (
     <form className="feat-form" onSubmit={handleSubmit}>
       <input type="text" value={name} name="name" placeholder="Name" onChange={(e) => setName(e.target.value)} />
-      <input type="textArea" value={comment} name="comment" placeholder="Why?" onChange={(e) => setComment(e.target.value)} />
+      <input type="textArea" value={comments} name="comment" placeholder="Why?" onChange={(e) => setComments(e.target.value)} />
 
       <button>Comment</button>
     </form>
