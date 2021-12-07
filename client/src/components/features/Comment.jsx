@@ -1,13 +1,13 @@
 import React from 'react';
-import { useParams, useNavigate } from 'react-router-dom'
-import { deleteComments } from '../../services/index'
+// import { useParams, useNavigate } from 'react-router-dom'
+// import { deleteComments } from '../../services/index'
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import { Container } from 'react-bootstrap';
 
 function Comment(props) {
-  const params = useParams()
-  const nav = useNavigate()
+  // const params = useParams()
+  // const nav = useNavigate()
 
   // const handleDelete = async () => {
   //   const res = await deleteComments(params.id)

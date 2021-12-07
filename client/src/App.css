@@ -16,11 +16,11 @@ body {
 
 .movie-posters {
   width: 300px;
-  margin: 30px auto;
+  margin: 50px auto;
   padding-top: 15px;
   border-radius: 10px;
   background-color: #f8f8f71e;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  box-shadow: #f6c882f0 5px 5px, #f6c882c1 10px 10px, #f6c882a7 15px 15px, #f6c88274 20px 20px, #f6c8825d 25px 25px;
 }
 
 /* .movie-posters {
