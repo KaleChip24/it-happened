@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react'
-import { useParams, Link, useNavigate } from 'react-router-dom'
-import { deleteFilms } from '../services/index'
+import { useParams } from 'react-router-dom'
 import StarRatings from 'react-star-ratings'
 
 function Data(props) {
   const [film, setFilm] = useState(null)
   const params = useParams()
-  const nav = useNavigate()
+
 
   useEffect(() => {
     const filmData = props.films.find(film => {
