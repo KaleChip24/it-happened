@@ -6,7 +6,7 @@ import { Routes, Route } from 'react-router-dom'
 import Nav from './components/Navbar';
 import Data from './components/Data';
 import Films from './components/Films';
-import Form from './components/Form';
+import MovieForm from './components/MovieForm';
 import Featured from './components/features/Featured';
 import CatData from './components/features/CatData';
 
@@ -52,7 +52,7 @@ function App() {
         <Route path="/"
           element={<Films films={films} />} />
         <Route path="/new"
-          element={<Form
+          element={<MovieForm
             setToggle={setToggle} />}
         />
         <Route path="/films/:id"
@@ -60,7 +60,7 @@ function App() {
             setToggle={setToggle} />}
         />
         <Route path="/edit/:id"
-          element={<Form films={films}
+          element={<MovieForm films={films}
             setToggle={setToggle} />}
         />
         <Route path="/featured"

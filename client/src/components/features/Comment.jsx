@@ -14,16 +14,16 @@ function Comment(props) {
   //   }
 
   return (
-    <section id="comments" class="bg-none">
-      <div class="container-lg">
-        <div class="text-center">
-          <h2 class="my-4">Featured Comments</h2>
+    <section id="comments" className="bg-none">
+      <div className="container-lg">
+        <div className="text-center">
+          <h2 className="my-4">Featured Comments</h2>
           {props.comment.map(comments => (
             <>
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <div class="list-group">
-                    <div class="list-group-item py-3 my-1">
+              <div className="row justify-content-center">
+                <div className="col-lg-8">
+                  <div className="list-group">
+                    <div className="list-group-item py-3 my-1">
                       <h3>Cat: <small>{comments.fields.name}</small></h3>
                       <p>{comments.fields.comments}</p>
                     </div>

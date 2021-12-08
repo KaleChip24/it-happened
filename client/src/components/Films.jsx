@@ -10,7 +10,7 @@ function Films(props) {
 
   return (
     <Container className="home-posters">
-      <Grid container lg={10} margin={"auto"}>
+      <Grid container margin={"auto"}>
         {
           props.films.map(film => (
             <div key={film.id} className="movie-posters">
