@@ -1,9 +1,6 @@
 import React from 'react';
 // import { useParams, useNavigate } from 'react-router-dom'
 // import { deleteComments } from '../../services/index'
-import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
-import { Container } from 'react-bootstrap';
 
 function Comment(props) {
   // const params = useParams()
@@ -17,19 +14,28 @@ function Comment(props) {
   //   }
 
   return (
-    <Container>
-      <Grid container spacing={2}>
-        {props.comment.map(comments => (
-          <Grid item key={comments.id} className="comment-data" xs={12} md={6} lg={4}>
-            <Paper>
-              <p>{comments.fields.comments}</p>
-              <h3>{comments.fields.name}</h3>
-              {/* <button onClick={handleDelete}>DELETE</button> */}
-            </Paper>
-          </Grid>
-        ))}
-      </Grid>
-    </Container>
+    <section id="comments" class="bg-none">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Featured Comments</h2>
+          {props.comment.map(comments => (
+            <>
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="list-group">
+                    <div class="list-group-item py-3 my-1">
+                      <h3>Cat: <small>{comments.fields.name}</small></h3>
+                      <p>{comments.fields.comments}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </>
+          ))}
+        </div>
+      </div>
+
+    </section>
   );
 }
 
