@@ -60,13 +60,13 @@ function MovieForm(props) {
   return (
 
     <section>
-      <div class="container-lg">
-        <div class="text-center">
+      <div className="container-lg">
+        <div className="text-center">
           <h3>Does your cat have a Purrfect review? Add below!</h3>
         </div>
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="title.input">
-            <Form.Label for="title" className="form-lable">Title</Form.Label>
+            <Form.Label className="form-lable">Title</Form.Label>
             <input
               type="text"
               value={title}
@@ -100,7 +100,7 @@ function MovieForm(props) {
             placeholder="Review"
             onChange={(e) => setReview(e.target.value)} />
 
-          <label for="subject" className="form-lable">Rating</label>
+          <label for="rating" className="form-lable">Rating</label>
           <input
             type="number"
             value={rating}
