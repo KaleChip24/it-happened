@@ -18,7 +18,7 @@ function Comment(props) {
 
   return (
     <Container>
-      <Grid container>
+      <Grid container spacing={2}>
         {props.comment.map(comments => (
           <Grid item key={comments.id} className="comment-data" xs={12} md={6} lg={4}>
             <Paper>
