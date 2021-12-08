@@ -49,3 +49,14 @@ padding-bottom: 15px;
 .feat-h4{
   margin-top: 20px;
 }
+
+.movie-form {
+  margin: 60px auto;
+  background-color: rgba(245, 245, 245, 0.414);
+  max-width: 800px;
+  padding:5px 20px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.movie-form fieldset{
+margin:20px 0;
+}

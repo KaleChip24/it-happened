@@ -13,7 +13,11 @@ function Films(props) {
       <Grid container >
         {
           props.films.map(film => (
-            <Grid item key={film.id} className="movie-posters" lg={5} marginTop={10} marginRight={"auto"} marginBottom={10}>
+            <Grid item key={film.id}
+              className="movie-posters"
+              lg={5} marginTop={10}
+              marginRight={"auto"}
+              marginBottom={10}>
               <Link
                 to={`/films/${film.id}`}
               >{<img style={{
