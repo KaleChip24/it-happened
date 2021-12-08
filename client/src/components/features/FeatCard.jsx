@@ -9,9 +9,9 @@ function FeatCard({ cats }) {
   const { name, movie, image, description } = cats.fields
 
   return (
-    <div className="film-card">
+    <div className="film-card my-5">
       <Card elevation={5}>
-        <img style={{ width: 300, height: 300, paddingTop: 10 }} src={image} alt="MoviePoster" />
+        <img style={{ width: 400, height: 300, paddingTop: 10 }} src={image} alt="MoviePoster" />
         <CardHeader
           title={name}
           subheader={movie}

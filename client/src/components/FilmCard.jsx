@@ -10,7 +10,7 @@ function FilmCard({ film }) {
   const { title, synopsis, review, rating, image } = film.fields
 
   return (
-    <div className="film-card">
+    <div className="film-card my-5">
       <Card elevation={5}>
         <img style={{ width: 200, height: 300, paddingTop: 10 }} src={image} alt="MoviePoster" />
         <CardHeader
