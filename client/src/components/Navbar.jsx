@@ -19,6 +19,9 @@ const Nav = () => {
 
   return (
     <nav className="navbar">
+      <section className="home-info">
+        <text>Movie Review for cats, by cats</text>
+      </section>
       <Button
         id="basic-button"
         aria-controls="basic-menu"

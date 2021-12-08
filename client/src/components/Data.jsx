@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import StarRatings from 'react-star-ratings'
 import FilmCard from './FilmCard'
-import { Grid } from '@mui/material'
+import { Container, Grid } from '@mui/material'
 
 function Data(props) {
   const [film, setFilm] = useState(null)
@@ -31,23 +31,24 @@ function Data(props) {
   // const { title, synopsis, review, rating, image } = film.fields
 
   return (
-    <Grid container>
-
-      <div className="film-details">
-        {film && film.fields &&
-          <>
-            {/* <img style={{ width: 200, height: 300 }} src={image} alt="MoviePoster" /> */}
-            {/* <h2>{title}</h2> */}
-            {/* <h2>{synopsis}</h2> */}
-            <FilmCard film={film} />
-            {/* <h2>{rating}</h2> */}
-            {/* <StarRatings rating={rating} starRatedColor="yellow" numberOfStars={5} name="rating" /> */}
-            {/* <Link to={`/edit/${film.id}`}>Edit Meow-vie Review</Link>
+    <Container>
+      <Grid container margin={"auto"}>
+        <div className="film-details">
+          {film && film.fields &&
+            <Grid item key={film.id}>
+              {/* <img style={{ width: 200, height: 300 }} src={image} alt="MoviePoster" /> */}
+              {/* <h2>{title}</h2> */}
+              {/* <h2>{synopsis}</h2> */}
+              <FilmCard film={film} />
+              {/* <h2>{rating}</h2> */}
+              {/* <StarRatings rating={rating} starRatedColor="yellow" numberOfStars={5} name="rating" /> */}
+              {/* <Link to={`/edit/${film.id}`}>Edit Meow-vie Review</Link>
           <button onClick={handleDelete}>Scratch. It. Out!</button> */}
-          </>
-        }
-      </div>
-    </Grid>
+            </Grid>
+          }
+        </div>
+      </Grid>
+    </Container>
   );
 }
 
