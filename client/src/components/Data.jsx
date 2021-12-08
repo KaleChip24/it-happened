@@ -27,8 +27,6 @@ function Data(props) {
 
   if (!film) return <h1> Loading... </h1>
 
-  // const { title, synopsis, review, rating, image } = film.fields
-
   return (
     <Container>
       <Grid container margin={"auto"}>

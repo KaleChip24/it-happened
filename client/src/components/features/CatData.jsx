@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from 'react-router-dom'
+import { Container, Grid } from '@mui/material'
+import FeatCard from "./FeatCard";
 
 import React from 'react';
 
@@ -17,21 +19,24 @@ function CatData(props) {
   }, [params.id, props.features])
 
   if (!cats) return <h1> Loading ... </h1>
-  const { name, movie, image, description } = cats.fields
-  return (
-    <div className="cat-data">
-      {
-        cats && cats.fields &&
-        <>
-          <img style={{ width: 400, height: 300 }} src={image} alt="Featured Cat" />
-          <h2>{name}</h2>
-          <h3>{movie}</h3>
-          <p>{description}</p>
-          <Link to="/featured">Back</Link>
-        </>
-      }
 
-    </div>
+  return (
+    <Container padding={10}>
+      <Grid>
+        <div className="cat-data">
+          {
+            cats && cats.fields &&
+            <>
+              <Grid item key={cats.id}>
+                <FeatCard cats={cats} />
+              </Grid>
+              <Link to="/featured">Back</Link>
+            </>
+          }
+        </div>
+
+      </Grid>
+    </Container>
   );
 }
 

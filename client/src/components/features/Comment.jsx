@@ -19,7 +19,7 @@ function Comment(props) {
         <div className="text-center">
           <h2 className="my-4">Featured Comments</h2>
           {props.comment.map(comments => (
-            <>
+            <div className="commentId-container" key={comments.id}>
               <div className="row justify-content-center">
                 <div className="col-lg-8">
                   <div className="list-group">
@@ -30,7 +30,7 @@ function Comment(props) {
                   </div>
                 </div>
               </div>
-            </>
+            </div>
           ))}
         </div>
       </div>

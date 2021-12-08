@@ -42,7 +42,7 @@ const Nav = () => {
       >
         <MenuItem onClick={handleClose}>{
           <Link to="/">Home</Link>}</MenuItem>
-        <MenuItem onClick={handleClose}>{<Link to="/new">Meow-vie Review</Link>}</MenuItem>
+        <MenuItem onClick={handleClose}>{<Link to="/new">Add Review</Link>}</MenuItem>
         <MenuItem onClick={handleClose}>{<Link to="/featured">Featured Feline</Link>}</MenuItem>
       </Menu>
 
