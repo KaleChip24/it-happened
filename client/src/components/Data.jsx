@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import StarRatings from 'react-star-ratings'
 import FilmCard from './FilmCard'
 import { Container, Grid } from '@mui/material'
 
@@ -36,14 +35,7 @@ function Data(props) {
         <div className="film-details">
           {film && film.fields &&
             <Grid item key={film.id}>
-              {/* <img style={{ width: 200, height: 300 }} src={image} alt="MoviePoster" /> */}
-              {/* <h2>{title}</h2> */}
-              {/* <h2>{synopsis}</h2> */}
               <FilmCard film={film} />
-              {/* <h2>{rating}</h2> */}
-              {/* <StarRatings rating={rating} starRatedColor="yellow" numberOfStars={5} name="rating" /> */}
-              {/* <Link to={`/edit/${film.id}`}>Edit Meow-vie Review</Link>
-          <button onClick={handleDelete}>Scratch. It. Out!</button> */}
             </Grid>
           }
         </div>

@@ -17,7 +17,7 @@ function Comment(props) {
     <section id="comments" class="bg-none">
       <div class="container-lg">
         <div class="text-center">
-          <h2>Featured Comments</h2>
+          <h2 class="my-4">Featured Comments</h2>
           {props.comment.map(comments => (
             <>
               <div class="row justify-content-center">
