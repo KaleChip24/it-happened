@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import FilmCard from './FilmCard'
 import { Container, Grid } from '@mui/material'
 
@@ -34,6 +34,7 @@ function Data(props) {
           {film && film.fields &&
             <Grid item key={film.id}>
               <FilmCard film={film} />
+              <Link to="/">Back</Link>
             </Grid>
           }
         </div>
