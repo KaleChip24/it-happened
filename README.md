@@ -110,3 +110,7 @@ Tablet adaptation
 - Using more than one Airtable
 - Spiders...
 - Getting full CRUD to work after all styling changes
+
+## Cited
+- Featured cat text comes from https://www.vulture.com/2019/12/famous-cat-performances-in-movies-ranked.html
+- Movie synopsis come from https://www.litter-robot.com/blog/2018/03/23/15-cat-movies/
