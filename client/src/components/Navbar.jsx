@@ -20,7 +20,6 @@ const Nav = () => {
   return (
     <nav className="navbar">
       <section className="home-info">
-        <p>Movie Review for cats, by cats</p>
       </section>
       <Button
         id="basic-button"

@@ -59,15 +59,15 @@ function App() {
           element={<Data films={films}
             setToggle={setToggle} />}
         />
-        <Route path="/edit/:id"
+        {/* <Route path="/edit/:id"
           element={<MovieForm films={films}
             setToggle={setToggle} />}
-        />
+        /> */}
         <Route path="/featured"
-          element={<Featured features={features} comment={comment} />}
+          element={<Featured features={features} comment={comment} setToggle={setToggle} />}
         />
         <Route path="/featured/:id"
-          element={<CatData features={features} />}
+          element={<CatData features={features} setToggle={setToggle} />}
         />
       </Routes>
 

@@ -31,8 +31,8 @@ function Featured(props, id) {
         }
       </div>
       <h4 className="feat-h4" >Who do you think should be our next Featured Feline?</h4>
-      <FeatForm />
-      <Comment comment={props.comment} />
+      <FeatForm setToggle={props.setToggle} />
+      <Comment comment={props.comment} setToggle={props.setToggle} />
     </>
   );
 }

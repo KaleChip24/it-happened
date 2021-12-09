@@ -17,14 +17,6 @@ function Data(props) {
     }
   }, [params.id, props.films])
 
-  // const handleDelete = async () => {
-  //   const res = await deleteFilms(params.id)
-  //   props.setToggle(e => !e)
-  //   if (res) {
-  //     nav(`/`)
-  //   }
-  // }
-
   if (!film) return <h1> Loading... </h1>
 
   return (

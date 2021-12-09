@@ -14,6 +14,10 @@ body {
   
 }
 
+.home-header{
+  margin-top: 60px;
+}
+
 .movie-posters {
   width: 300px;
   margin: 50px auto;
@@ -38,6 +42,7 @@ padding-bottom: 15px;
   background-color: #e3ddbf00;
   border-radius: 15px;
   height:70px;
+  padding: 20px;
   box-shadow: #f6c882f0 0px 5px, #f6c882c1 0px 10px, #f6c882a7 0px 15px, #f6c88274 0px 20px, #f6c8825d 0px 25px;
 }
 
@@ -60,3 +65,4 @@ padding-bottom: 15px;
 .movie-form fieldset{
 margin:20px 0;
 }
+

@@ -2,7 +2,7 @@
 
 ## Project Name
 
-[Movie Meow-tian](https://github.com/KaleChip24/it-happened)
+[Movie Meow-tian](https://moviemeowtian.netlify.app/)
 
 ## Project Description
 
@@ -54,22 +54,22 @@ Tablet adaptation
 
 - Change curser to cat paw.
 - Change rating stars to mice or furrballs?
-- Comments page that allows for comments on current movies.
-- Add a second table with cat related book reviews.
 - Add a "Featured" link for best feline character.
+- Comments page that allows for comments on current featured cats.
+- Add another table with cat related book reviews.
 
 ## Project Schedule
 
 |  Day | Deliverable | Status
 |---|---| ---|
 |Dec 1| Prompt / Wireframes / Component Hierarchy / Timeframes | Complete
-|Dec 2| Project Approval / Airtable Build | Incomplete
-|Dec 3| Core Structure Setup (C.R.U.D) | Incomplete
-|Dec 4-5| Pseudocode / Actual code | Incomplete
-|Dec 6| Styling | Incomplete
-|Dec 7| MVP | Incomplete
-|Dec 8| Debugging / Post-MVP | Incomplete
-|Dec 9| Presentations | Incomplete
+|Dec 2| Project Approval / Airtable Build | Complete
+|Dec 3| Core Structure Setup (C.R.U.D) | Complete
+|Dec 4-5| Pseudocode / Actual code | Complete
+|Dec 6| Styling | Complete
+|Dec 7| MVP | Complete
+|Dec 8| Debugging / Post-MVP | Complete
+|Dec 9| Presentations | Complete
 
 ## Timeframes
 
@@ -79,14 +79,17 @@ Tablet adaptation
 | Propposal Writting | H | 3hrs| 3hrs | 3hrs |
 | Building Airtable | H | 2hrs| 2hrs | 2hrs |
 | Render Data to Home | H | 3hrs| 2.5hrs | 2.5hrs |
-| Navigation To Review page | H | 3hrs| 0hrs | 0hrs |
-| Form Creation | H | 3hrs| 0hrs | 0hrs |
-| Navigation to Form | H | 3hrs| 0hrs | 0hrs |
-| Post to Home | H | 3hrs| 0hrs | 0hrs |
-| Styling | H | 3hrs| 0hrs | 0hrs |
-| Final DeBugging | H | 3hrs| 0hrs | 0hrs |
-| Post MVP| H | 4hrs| 0hrs | 0hrs |
-| Total | H | 30hrs| 7.5hrs | 0hrs |
+| Render Data to Featured | H | 3hrs| 3hrs | 2.5hrs |
+| Navigation To Review page | H | 1hrs| 1hrs | 0hrs |
+|  Review Form Creation | H | 3hrs| 3hrs | 0hrs |
+| Navigation to Form | H | 1hrs| 1hrs | 0hrs |
+| Comments Form Creation| H | 3hrs| 3hrs | 0hrs |
+| Post to Home | H | 3hrs| 3hrs | 0hrs |
+| Post to Comments | H | 3hrs| 3hrs | 0hrs |
+| Styling | H | 3hrs| 4hrs | 0hrs |
+| Final DeBugging | H | 3hrs| 3hrs | 0hrs |
+| Post MVP| H | 4hrs| 4rs | 0hrs |
+| Total | H | 35hrs| 36.5hrs | 0hrs |
 
 ## SWOT Analysis
 
@@ -97,12 +100,13 @@ Tablet adaptation
 ### Weaknesses:
 - JS loops! 
 - Getting my info to render to the page consistantly
+- Keeping the functions working after styling
 
 ### Opportunities:
 - Excited to make this fun and get a laugh
-- Will add more as the project goes on.
+- Learning to use more than one Airtable
 
 ### Threats:
 - Using more than one Airtable
 - Spiders...
-- Will add more (serious ones, not just spiders)
+- Getting full CRUD to work after all styling changes
