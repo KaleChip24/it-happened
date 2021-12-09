@@ -81,15 +81,15 @@ Tablet adaptation
 | Render Data to Home | H | 3hrs| 2.5hrs | 2.5hrs |
 | Render Data to Featured | H | 3hrs| 3hrs | 2.5hrs |
 | Navigation To Review page | H | 1hrs| 1hrs | 0hrs |
-|  Review Form Creation | H | 3hrs| 3hrs | 0hrs |
-| Navigation to Form | H | 1hrs| 1hrs | 0hrs |
-| Comments Form Creation| H | 3hrs| 3hrs | 0hrs |
-| Post to Home | H | 3hrs| 3hrs | 0hrs |
-| Post to Comments | H | 3hrs| 3hrs | 0hrs |
-| Styling | H | 3hrs| 4hrs | 0hrs |
-| Final DeBugging | H | 3hrs| 3hrs | 0hrs |
-| Post MVP| H | 4hrs| 4rs | 0hrs |
-| Total | H | 35hrs| 36.5hrs | 0hrs |
+|  Review Form Creation | H | 3hrs| 3hrs | 3hrs |
+| Navigation to Form | H | 1hrs| 1hrs | 1hrs |
+| Comments Form Creation| H | 3hrs| 3hrs | 3hrs |
+| Post to Home | H | 3hrs| 3hrs | 3hrs |
+| Post to Comments | H | 3hrs| 3hrs | 3hrs |
+| Styling | H | 3hrs| 4hrs | 4hrs |
+| Final DeBugging | H | 3hrs| 3hrs | 3hrs |
+| Post MVP| H | 4hrs| 4rs | 4hrs |
+| Total | H | 35hrs| 36.5hrs | 36.5hrs |
 
 ## SWOT Analysis
 
